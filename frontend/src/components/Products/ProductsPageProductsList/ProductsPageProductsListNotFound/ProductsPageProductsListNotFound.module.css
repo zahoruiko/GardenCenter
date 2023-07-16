@@ -1,0 +1,9 @@
+#error__NotFoundMessage {
+  font-size: 40px;
+  line-height: 52px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 50px 0 80px 10px;
+  color: var(--text-color);
+}

@@ -1,0 +1,108 @@
+#getDiscount__wrapper {
+  height: 476px;
+  background: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 91px;
+}
+
+#getDiscount__formWrapper {
+  width: 473px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 255px;
+}
+
+#getDiscount__formTitle {
+  font-size: 90px;
+  line-height: 108px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: white;
+}
+
+#getDiscount__formInfoText {
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: white;
+}
+
+#getDiscount__form {
+  width: 100%;
+}
+
+#getDiscount__formInputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 75.44px;
+  background-color: white;
+  border: 2.39px solid white;
+  border-radius: 25px;
+  margin-top: 46px;
+}
+
+#getDiscount__formInput {
+  width: 100%;
+  background-color: white;
+  border: 2.39px solid white;
+  border-radius: 25px;
+  height: 30px;
+  margin: 0 31px;
+  outline: none;
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  font-family: var(--font-family);
+  color: #6C6C6C;
+}
+
+#getDiscount__formSubmit {
+  width: 100%;
+  height: 75.44px;
+  background-color: transparent;
+  border: 2.39px solid white;
+  border-radius: 25px;
+  font-size: 29px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  font-family: var(--font-family);
+  color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-top: 30.52px;
+  transition: ease 0.3s;
+  margin-bottom: 30px;
+}
+
+#getDiscount__formSubmit:hover {
+  box-shadow: 2px 2px 4px lightgray;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+#getDiscount__formSubmit:active {
+  box-shadow: inset 2px 2px 4px darkgreen;
+  transition: ease 0.3s;
+  color: darkgreen;
+  background-color: lightgreen;
+  cursor: pointer;
+  border: 2.39px solid darkgreen;
+}
+
+#getDiscount__customerPhoneInputError {
+  color: white;
+  font-family: var(--font-family);
+  margin-top: 27px;
+  font-weight: bold;
+  padding-left: 40px;
+}

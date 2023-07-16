@@ -1,0 +1,27 @@
+{
+  "name": "garden_center_backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "This is a modified version of the backend for my implementation of the Garden center.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "node": "node index.js"
+  },
+  "author": "Hayk & Oleksii Zahoruiko",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "helmet": "^7.0.0",
+    "sequelize": "^6.23.2",
+    "sqlite3": "^5.1.6",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

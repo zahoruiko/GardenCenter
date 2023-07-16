@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: ease-in-out 0.15s;
+  -webkit-transition: ease-in-out 0.15s;
+
+  --font-family: 'Montserrat', sans-serif;
+  --main-wrapper-border-color: lightgray;
+}
+
+:root[data-theme="light"] {
+  --background-color: white;
+  --text-color: black;
+  --border-color: black;
+  --invisible-border-color: white;
+  --hover-border-color: lightgray;
+  --item-border-color: gray;
+  --box-shadow: lightgray;
+  --active-box-shadow: lightgray;
+  --text-shadow: lightgray;
+
+  --header-background-color: white;
+
+  --mainoffer-background-color: #A1E2EB;
+  --main-page-all-categories-button-border: #8B8B8B;
+  --main-page-all-categories-button-background: white;
+  --main-page-all-categories-button-text: #8B8B8B;
+
+  --product-image-brightness: 100%;
+  --product-list-item-title: #3A3A3A;
+  --product-item-old-price: #8B8B8B;
+
+  --form-text-input-background-color: transparent;
+
+  --google-maps-filter: 0%;
+  --google-maps-hue-rotate: 0deg;
+  --google-maps-contrast: 100%;
+
+  --footer-text-color: black;
+  --footer-border: gray;
+  --footer-background: rgb(235, 235, 235);
+
+  --pagination-current-page-text: black;
+  --pagination-current-page-background: white;
+  --pagination-current-page-border: black;
+  --pagination-current-page-text-hover: black;
+  --pagination-offset-text: black;
+  --pagination-page-border: var(--text-color);
+  --pagination-page-text: var(--text-color);
+  --pagination-page-background: transparent;
+  --pagination-page-text-hover: white;
+  --pagination-page-background-hover: #339933;
+  --pagination-nav-link-border: black;
+  --pagination-nav-link-border-hover: black;
+  --pagination-nav-link-text: black;
+  --pagination-nav-link-background: transparent;
+  --pagination-nav-link-text-hover: white;
+  --pagination-nav-link-background-hover: #339933;
+  --pagination-nav-link-border-disabled: lightgray;
+
+  --shopping-cart-clear-cart-button-text-color: gray;
+  --shopping-cart-clear-cart-button-background: white;
+
+  background-color: var(--background-color);
+}
+
+:root[data-theme="dark"] {
+  --background-color: #2b3e51;
+  --text-color: rgb(213, 230, 247);
+  --border-color: lightgray;
+  --invisible-border-color: #2b3e51;
+  --hover-border-color: lightgray;
+  --item-border-color: lightgray;
+  --box-shadow: lightgray;
+  --active-box-shadow: white;
+  --text-shadow: lightgray;
+
+  --header-background-color: #c7dbef;
+
+  --mainoffer-background-color: #6d9ba1;
+  --main-page-all-categories-button-border: #8B8B8B;
+  --main-page-all-categories-button-background: #638fbb;
+  --main-page-all-categories-button-text: rgb(213, 230, 247);
+
+  --product-image-brightness: 80%;
+  --product-list-item-title: lightgray;
+  --product-item-old-price: #0376e8;
+
+  --form-text-input-background-color: lightgray;
+
+  --google-maps-filter: 90%;
+  --google-maps-hue-rotate: 180deg;
+  --google-maps-contrast: 93%;
+
+  --footer-text-color: white;
+  --footer-border: black;
+  --footer-background: #354e67;
+
+  --pagination-current-page-text: var(--text-color);
+  --pagination-current-page-background: #2b3e51;
+  --pagination-current-page-border: white;
+  --pagination-current-page-text-hover: black;
+  --pagination-offset-text: #bddcfb;
+  --pagination-page-border: var(--text-color);
+  --pagination-page-text: var(--text-color);
+  --pagination-page-background: transparent;
+  --pagination-page-text-hover: black;
+  --pagination-page-background-hover: #bddcfb;
+  --pagination-nav-link-border: var(--border-color);
+  --pagination-nav-link-border-hover: #bddcfb;
+  --pagination-nav-link-text: #bddcfb;
+  --pagination-nav-link-background: transparent;
+  --pagination-nav-link-text-hover: black;
+  --pagination-nav-link-background-hover: #bddcfb;
+  --pagination-nav-link-border-disabled: gray;
+
+  --shopping-cart-clear-cart-button-text-color: white;
+  --shopping-cart-clear-cart-button-background: #2b3e51;
+
+  background-color: var(--background-color);
+}

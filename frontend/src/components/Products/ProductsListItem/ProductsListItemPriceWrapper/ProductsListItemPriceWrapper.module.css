@@ -1,0 +1,49 @@
+.offer__pricesWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 20px 15px 10px 15px;
+}
+
+.offer__currentPrice {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.offer__oldPrice {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  letter-spacing: 0.03em;
+  color: var(--product-item-old-price);
+  text-decoration: line-through;
+}
+
+.offer__priceDiscrount {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  letter-spacing: 0.03em;
+  color: #FF32A1;
+}
+
+.offer__priceCurrencySign {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: var(--font-family);
+}
+
+.offer__discountPriceCurrencySign {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: var(--font-family);
+}

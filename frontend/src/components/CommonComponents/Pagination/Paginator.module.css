@@ -1,0 +1,103 @@
+.pagination_wrapper {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  font-size: 16px;
+  margin: 15px 15px;
+}
+
+.pagination_pagesListWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 0px solid red;
+}
+
+.pagination_title {
+  padding: 10px 10px 10px 0px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.page_link {
+  display: block;
+  padding: 5px 15px;
+  border-radius: 7px;
+  border: 1px solid var(--border-color);
+  color: var(--pagination-page-text);
+  text-decoration: none;
+  margin: 5px 5px 5px 0px;
+  user-select: none;
+}
+
+.page_link:hover {
+  display: block;
+  padding: 5px 15px;
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  margin: 5px 5px 5px 0px;
+  color: var(--pagination-page-text-hover);
+  transition: 0.3s ease;
+  background-color: var(--pagination-page-background-hover);
+}
+
+.current_page_link {
+  padding: 5px 15px;
+  border: 2px solid var(--pagination-current-page-border);
+  border-radius: 7px;
+  text-decoration: none;
+  color: var(--pagination-current-page-text);
+  background-color: var(--pagination-current-page-background);
+  margin: 5px 5px 5px 0px;
+  user-select: none;
+  font-weight: bold;
+}
+
+.offset {
+  padding: 5px 5px;
+  margin: 5px 5px 5px 0px;
+  user-select: none;
+  color: var(--pagination-offset-text);
+}
+
+.pagination_nav_links {
+  display: inline-block;
+  width: 120px;
+  padding: 5px 10px;
+  border: 1px solid var(--pagination-nav-link-border);
+  color: var(--pagination-nav-link-text);
+  border-radius: 7px;
+  text-decoration: none;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  user-select: none;
+}
+
+.pagination_nav_links:hover {
+  display: inline-block;
+  width: 120px;
+  padding: 5px 10px;
+  border: 1px solid var(--pagination-nav-link-border-hover);
+  color: var(--pagination-nav-link-text-hover);
+  background-color: var(--pagination-nav-link-background-hover);
+  text-decoration: none;
+  margin: 5px 5px 5px 0px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.pagination_nav_links_disabled {
+  display: inline-block;
+  width: 120px;
+  padding: 5px 10px;
+  margin: 5px 5px 5px 0px;
+  border: 1px solid var(--pagination-nav-link-border-disabled);
+  border-radius: 7px;
+  color: gray;
+  text-decoration: none;
+  text-align: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

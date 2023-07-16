@@ -1,0 +1,61 @@
+#shoppingCart__customerPhoneInputWrapper {
+  margin-top: 50px;
+  width: 446px;
+  height: 73px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#shoppingCart__customerPhoneInput {
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 100%;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #929292;
+  border: 0;
+  outline: none;
+}
+
+#shoppingCart__formSubmit {
+  margin-top: 25px;
+  background: #339933;
+  border-radius: 17px;
+  width: 446px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  padding: 20px 0;
+  transition: ease 0.3s;
+}
+
+#shoppingCart__formSubmit:hover {
+  box-shadow: 2px 2px 4px gray;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+#shoppingCart__formSubmit:active {
+  color: darkgreen;
+  background-color: lightgreen;
+}
+
+#shoppingCart__customerPhoneInputError {
+  color: red;
+  font-family: var(--font-family);
+  margin-top: 27px;
+  font-weight: bold;
+  padding-left: 14px;
+}

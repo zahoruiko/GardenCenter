@@ -1,0 +1,17 @@
+#shoppingCart__isEmptyTitle {
+  font-family: var(--font-family);
+  font-size: 30px;
+  margin-top: 25px;
+  color: var(--text-color);
+}
+
+#shoppingCart__isEmptyMessage {
+  font-family: var(--font-family);
+  font-size: 20px;
+  margin-top: 30px;
+  color: var(--text-color);
+}
+
+.shoppingCart__navLink {
+  color: black;
+}

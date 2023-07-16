@@ -1,0 +1,56 @@
+#getDiscount__wrapper {
+  height: 476px;
+  background: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 91px;
+}
+
+#getDiscount__formWrapper {
+  width: 573px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 155px;
+}
+
+#getDiscount__formTitle {
+  font-size: 90px;
+  line-height: 108px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: white;
+}
+
+#getDiscount__formInfoText {
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-family: var(--font-family);
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  #getDiscount__imageWrapper {
+    display: none;
+  }
+
+  #getDiscount__formWrapper {
+    margin: 0 auto;
+  }
+
+  #getDiscount__wrapper {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1290px) {
+  #getDiscount__imageWrapper {
+    opacity: 0;
+    transition: ease 0.3s;
+  }
+}

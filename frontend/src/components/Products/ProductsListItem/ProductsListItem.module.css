@@ -1,0 +1,120 @@
+.offer__mainWrapper {
+  width: 330px;
+  position: relative;
+  border: 1px solid var(--invisible-border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.offer__mainWrapper:hover {
+  border: 1px solid var(--hover-border-color);
+  box-shadow: 2px 2px 4px var(--box-shadow);
+}
+
+.offer__wrapper {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offer__imageWrapper {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  filter: brightness(var(--product-image-brightness));
+}
+
+.offer__imageWrapper img {
+  border-radius: 15px;
+  width: 300px;
+}
+
+.offer__title {
+  font-size: 16px;
+  line-height: 20.8px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  letter-spacing: 0.03em;
+  color: var(--product-list-item-title);
+  padding: 0 15px 20px 15px;
+  height: 40px;
+  margin-bottom: 25px;
+}
+
+.offer_cartButton {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 196px;
+  left: 22px;
+  width: 279px;
+  height: 72px;
+  background: #F1FFF1;
+  border: 2px solid #339933;
+  border-radius: 21px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #339933;
+  opacity: 0;
+}
+
+.offer__mainWrapper:hover .offer_cartButton {
+  opacity: 1;
+  box-shadow: 2px 2px 4px green;
+  cursor: pointer;
+}
+
+.offer_cartButton:hover {
+  opacity: 1;
+  box-shadow: 2px 2px 4px green;
+}
+
+.offer_cartButton:active {
+  background-color: darkgreen;
+  color: lightgreen;
+}
+
+.link__decoration {
+  text-decoration: none;
+  color: black;
+}
+
+.offer_itemsQuantityInCart {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 15px;
+  background-color: red;
+  display: flex;
+  filter: brightness(var(--product-image-brightness));
+}
+
+.offer_itemsQuantityInCart img {
+  width: 14px;
+  margin-right: 5px;
+}
+
+.offer_shoppingCargSymbol {
+  margin-right: 5px;
+  font-size: 18px;
+  line-height: 1;
+}

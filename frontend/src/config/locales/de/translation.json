@@ -1,0 +1,94 @@
+{
+  "header__SiteLogoAltTitle": "Garten-Zentrum",
+  "header__CatalogButtonText": "Katalog",
+  "header__MainPageLinkText": "Startseite",
+  "header__AllProductsLinkText": "Alle Produkte",
+  "header__AllSalesLinkText": "Alle Verkäufe",
+
+  "mainPage__PageTitle": "Garten-Zentrum: Startseite",
+  "mainPage__PageDescription": "Das Gartenzentrum bietet Gartenprodukte an: Pflanzen, Dünger, Gartengeräte, Gartendekoration und vieles mehr.",
+
+  "mainPage__MainOfferTitle": "Verkauf",
+  "mainPage__MainOfferMessage": "Neue Season",
+  "mainPage__MainOfferButtonText": "Verkauf",
+
+  "mainPage__BesteCategoriesWrapperTitle": "Katalog",
+  "mainPage__BesteCategoriesWrapperButtonText": "Alle Kategorien",
+
+  "mainPage__GetDiscountFormImageAltText": "Jetzt Rabatt sichern!",
+  "mainPage__GetDiscountFormTitle": "5 % Rabatt",
+  "mainPage__GetDiscountFormInfoText": "bei der ersten Bestellung",
+
+  "mainPage__GetDiscountFormShowToastSuccessText": "Die Anfrage wurde gesendet. Überprüfen Sie die SMS.",
+  "mainPage__GetDiscountFormPhoneIsRequiredText": "* Telefon ist erforderlich",
+  "mainPage__GetDiscountFormPleaseEnterValidPhoneText": "* Bitte geben Sie eine gültige Telefonnummer ein",
+  "mainPage__GetDiscountFormSubmitButtonText": "Einen Rabatt bekommen",
+
+  "paginator__title": "Seiten",
+  "paginator__txt_forward": "Nächste >",
+  "paginator__txt_back": "< Vorherige",
+  "paginator__txt_button_disabled": "Schaltfläche deaktiviert",
+
+  "mainPage__ProductsListTitle": "Verkauf",
+
+  "contacts__PhoneTitleText": "Kontakt",
+  "contacts__AddressTitleText": "Adresse",
+  "contacts__AddressText": "Linkstraße 2, 8 OG.<br />10785 Berlin<br />Deutschland",
+  "contacts__WorkingTimeTitle": "Arbeitszeit",
+  "contacts__WorkingTimeText": "24 Stunden am Tag",
+
+  "categoriesPage__PageTitle": "Kategorien",
+  "categoriesPage__PageDesccription": "Die Seite enthält Links zu den thematischen Produktkategorien des Katalogs",
+  "categoriesPage__CategoriesListTitle": "Kategorien",
+
+  "productsList__StandartPageTitle": "Produkte",
+  "productsList__StandartPageDescription": "Produkte der Kategorie: ",
+
+  "productsList__NotFound": "Nicht gefunden",
+
+  "productsFilter__PriceLabel": "Preis",
+  "productsFilter__PriceFieldFromPlaceholder": "von",
+  "productsFilter__PriceFieldToPlaceholder": "bis",
+  "productsFilter__DiscountItemsCheckboxLabel": "Reduzierte Artikel",
+  "productsFilter__SortModeLabel": "Sortieren",
+  "productsFilter__SortModeOption0": "Empholen",
+  "productsFilter__SortModeOption1": "Name: A bis Z",
+  "productsFilter__SortModeOption2": "Name: Z bis A",
+  "productsFilter__SortModeOption3": "Preis: Aufsteigend",
+  "productsFilter__SortModeOption4": "Preis: Absteigend",
+  "productsFilter__SortModeOption5": "Neuheiten",
+  "productsFilter__SortModeOption6": "Älteste Ankünfte",
+  "productsFilter__SearchTermPlaceholder": "Suchbegriff",
+  "productsFilter__SearchTermLabel": "Suche",
+
+  "allProductsPage__pageTitle": "Alle Produkte",
+  "allProductsPage__pageDescription": "Alle Produktliste",
+
+  "allSalesPage__pageTitle": "Alle Verkäufe",
+  "allSalesPage__pageDescription": "Liste aller Rabattprodukte",
+
+  "shoppingCart__Title": "Warenkorb",
+  "shoppingCart__ShoppingCartIsEmptyText": "Der Warenkorb ist derzeit leer",
+  "shoppingCart__CartClearedToastMessage": "Alle Produkte werden aus dem Warenkorb entfernt.",
+  "shoppingCart__BackToTheStoreLinkText": "Zurück zum Laden",
+  "shoppingCart__ClearCartButtonText": "Warenkorb leeren",
+  "shoppingCart__OrderDetailsFormTitle": "Bestelldetails",
+  "shoppingCart__OrderSumTitle": "Insgesamt",
+  "shoppingCart__FormSuccessToastMessage": "Ihre Bestellung wurde versendet.",
+  "shoppingCart__FormWarningToastMessage": "Ihr Einkaufskorb ist derzeit leer.",
+  "shoppingCart__FormPhoneIsRequiredMessage": "* Telefon ist erforderlich",
+  "shoppingCart__FormPleaseEnterAValidPhoneMessage": "* Bitte geben Sie eine gültige Telefonnummer ein",
+  "shoppingCart__FormCartIsEmptyMessage": "* Der Warenkorb ist derzeit leer",
+  "shoppingCart__FormPhoneNumberPlaceholderText": "Telefonnummer",
+  "shoppingCart__FormSubmitButtonText": "Bestellen",
+
+  "productItem__IsAddedToShoppingCart": " wird dem Warenkorb hinzugefügt",
+  "productItem__AddToCartButtonText": "Zum Warenkorb",
+  "productItem__DescriptionTitle": "Beschreibung",
+
+  "notFoundPage__imageAltText": "Nicht gefunden",
+
+  "footer__interfaceLanguageSelectorLableText": "Schnittstellensprache",
+  "footer__interfaceLanguageSelectorOptionEnglish": "Englisch",
+  "footer__interfaceLanguageSelectorOptionGerman": "Deutsch"
+}

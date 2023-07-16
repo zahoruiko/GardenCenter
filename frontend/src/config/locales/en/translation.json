@@ -1,0 +1,94 @@
+{
+  "header__SiteLogoAltTitle": "Garden Center",
+  "header__CatalogButtonText": "Catalog",
+  "header__MainPageLinkText": "Main Page",
+  "header__AllProductsLinkText": "All products",
+  "header__AllSalesLinkText": "All sales",
+
+  "mainPage__PageTitle": "Garden Center: Main page",
+  "mainPage__PageDescription": "Garten Center offers garden products: plants, fertilizers, garden tools, garden decor and much more.",
+
+  "mainPage__MainOfferTitle": "Sale",
+  "mainPage__MainOfferMessage": "New season",
+  "mainPage__MainOfferButtonText": "Sale",
+
+  "mainPage__BesteCategoriesWrapperTitle": "Catalog",
+  "mainPage__BesteCategoriesWrapperButtonText": "All categories",
+
+  "mainPage__GetDiscountFormImageAltText": "Get discount now!",
+  "mainPage__GetDiscountFormTitle": "5% off",
+  "mainPage__GetDiscountFormInfoText": "on the first order",
+
+  "mainPage__GetDiscountFormShowToastSuccessText": "The request has been sent. Check the SMS.",
+  "mainPage__GetDiscountFormPhoneIsRequiredText": "* Phone is required",
+  "mainPage__GetDiscountFormPleaseEnterValidPhoneText": "* Please enter a valid phone",
+  "mainPage__GetDiscountFormSubmitButtonText": "Get a discount",
+
+  "mainPage__ProductsListTitle": "Sale",
+
+  "contacts__PhoneTitleText": "Contact",
+  "contacts__AddressTitleText": "Address",
+  "contacts__AddressText": "Linkstrasse 2, 8 OG.<br />10785 Berlin<br />Germany",
+  "contacts__WorkingTimeTitle": "Working Hours",
+  "contacts__WorkingTimeText": "24 hours a day",
+
+  "categoriesPage__PageTitle": "Categories",
+  "categoriesPage__PageDesccription": "The page contains links to the thematic product categories of the catalog",
+  "categoriesPage__CategoriesListTitle": "Categories",
+
+  "productsList__StandartPageTitle": "Products",
+  "productsList__StandartPageDescription": "Products of the category: ",
+
+  "productsList__NotFound": "Not found",
+
+  "productsFilter__PriceLabel": "Price",
+  "productsFilter__PriceFieldFromPlaceholder": "from",
+  "productsFilter__PriceFieldToPlaceholder": "to",
+  "productsFilter__DiscountItemsCheckboxLabel": "Discounted items",
+  "productsFilter__SortModeLabel": "Sorted",
+  "productsFilter__SortModeOption0": "Sort: by default",
+  "productsFilter__SortModeOption1": "Name: A to Z",
+  "productsFilter__SortModeOption2": "Name: Z to A",
+  "productsFilter__SortModeOption3": "Price: Low to High",
+  "productsFilter__SortModeOption4": "Price: High to Low",
+  "productsFilter__SortModeOption5": "Newest Arrivals",
+  "productsFilter__SortModeOption6": "Oldest Arrivals",
+  "productsFilter__SearchTermPlaceholder": "Search term",
+  "productsFilter__SearchTermLabel": "Search",
+
+  "allProductsPage__pageTitle": "All products",
+  "allProductsPage__pageDescription": "All products list",
+
+  "allSalesPage__pageTitle": "All sales",
+  "allSalesPage__pageDescription": "All discount products list",
+
+  "shoppingCart__Title": "Shopping cart",
+  "shoppingCart__ShoppingCartIsEmptyText": "The shopping cart is currently empty",
+  "shoppingCart__CartClearedToastMessage": "All products are removed from the cart.",
+  "shoppingCart__BackToTheStoreLinkText": "Back to the store",
+  "shoppingCart__ClearCartButtonText": "Clear cart",
+  "shoppingCart__OrderDetailsFormTitle": "Order details",
+  "shoppingCart__OrderSumTitle": "Total",
+  "shoppingCart__FormSuccessToastMessage": "Your order has been sent.",
+  "shoppingCart__FormWarningToastMessage": "Your shopping cart is currently empty.",
+  "shoppingCart__FormPhoneIsRequiredMessage": "* Phone is required",
+  "shoppingCart__FormPleaseEnterAValidPhoneMessage": "* Please enter a valid phone",
+  "shoppingCart__FormCartIsEmptyMessage": "* Shopping cart is currently empty",
+  "shoppingCart__FormPhoneNumberPlaceholderText": "Phone number",
+  "shoppingCart__FormSubmitButtonText": "Order",
+
+  "productItem__IsAddedToShoppingCart": " is added to the shopping cart",
+  "productItem__AddToCartButtonText": "To cart",
+  "productItem__DescriptionTitle": "Description",
+
+  "paginator__title": "Pages",
+  "paginator__txt_forward": "Next >",
+  "paginator__txt_back": "< Prev.",
+  "paginator__txt_button_disabled": "Button disabled",
+
+  "notFoundPage__imageAltText": "Not found",
+
+  "footer__interfaceLanguageSelectorLableText": "Interface language",
+  "footer__interfaceLanguageSelectorOptionEnglish": "English",
+  "footer__interfaceLanguageSelectorOptionGerman": "German"
+}

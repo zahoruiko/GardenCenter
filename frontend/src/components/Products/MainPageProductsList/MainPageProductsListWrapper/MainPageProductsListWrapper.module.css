@@ -1,0 +1,28 @@
+#offers__mainWrapper {
+  padding: 49px 20px;
+}
+
+#offers__saleTitle {
+  font-size: 40px;
+  line-height: 52px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding-left: 15px;
+  color: var(--text-color);
+}
+
+#offers__listWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+@media (max-width: 1440px) {
+  #offers__listWrapper {
+    justify-content: left;
+  }
+}

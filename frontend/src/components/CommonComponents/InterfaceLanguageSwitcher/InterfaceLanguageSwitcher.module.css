@@ -1,0 +1,15 @@
+#languageSelector__label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--footer-text-color);
+}
+
+#languageSelector__selector {
+  margin-left: 20px;
+  width: 100px;
+  outline: none;
+  height: 30px;
+  border-radius: 7px;
+  padding: 5px;
+  font-size: 15px;
+}
