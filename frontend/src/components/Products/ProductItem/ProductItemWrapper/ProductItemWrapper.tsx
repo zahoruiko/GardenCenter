@@ -54,70 +54,72 @@ const ProductItemWrapper: React.FC<TProductItemWrapperProps> = ({
   const imgUrl = backendUrl + image;
 
   return (
-    <article>
+    <>
       <PageMetaData title={title} description={description} />
-      <div id={styles.productItem__wrapper}>
-        <div id={styles.productItem__titleWrapper}>
-          <h1>{title}</h1>
-        </div>
-        <div id={styles.productItem__descriptionWrapper}>
-          <div id={styles.productItem__imageMainWrapper}>
-            <figure id={styles.productItem__imageWrapper}>
-              <img
-                src={imgUrl}
-                alt={title}
-                title={title}
-                id={styles.productItem__image}
-              />
-            </figure>
-            {productInCart && (
-              <NavLink to="/shoppingCart">
-                <div
-                  className={styles.offer_itemsQuantityInCart}
-                  title="Quantity in the shopping cart"
-                >
-                  <div className={styles.offer_shoppingCargSymbol}>
-                    <LiaShoppingBagSolid />
+      <article>
+        <div id={styles.productItem__wrapper}>
+          <div id={styles.productItem__titleWrapper}>
+            <h1>{title}</h1>
+          </div>
+          <div id={styles.productItem__descriptionWrapper}>
+            <div id={styles.productItem__imageMainWrapper}>
+              <figure id={styles.productItem__imageWrapper}>
+                <img
+                  src={imgUrl}
+                  alt={title}
+                  title={title}
+                  id={styles.productItem__image}
+                />
+              </figure>
+              {productInCart && (
+                <NavLink to="/shoppingCart">
+                  <div
+                    className={styles.offer_itemsQuantityInCart}
+                    title="Quantity in the shopping cart"
+                  >
+                    <div className={styles.offer_shoppingCargSymbol}>
+                      <LiaShoppingBagSolid />
+                    </div>
+                    {productInCart && productInCart.quantity}
                   </div>
-                  {productInCart && productInCart.quantity}
-                </div>
-              </NavLink>
-            )}
-          </div>
-
-          <div id={styles.productItem__descriptionDetailsWrapper}>
-            <ProductItemPriceWrapper
-              price={price}
-              discont_price={discont_price}
-            />
-            <div id={styles.productItem__cartButtonWrapper}>
-              <button
-                id={styles.productItem__cartButton}
-                onClick={() => {
-                  dispatch(
-                    addToCart({ id, title, price, discont_price, image })
-                  );
-                  showToastSuccess(
-                    `"${title}"` + t("productItem__IsAddedToShoppingCart")
-                  );
-                }}
-              >
-                {t("productItem__AddToCartButtonText")}
-              </button>
+                </NavLink>
+              )}
             </div>
 
-            <div className={styles.customDashedLinie}>&nbsp;</div>
-            <div id={styles.productItem__descriptionTitle}>
-              {t("productItem__DescriptionTitle")}
+            <div id={styles.productItem__descriptionDetailsWrapper}>
+              <ProductItemPriceWrapper
+                price={price}
+                discont_price={discont_price}
+              />
+              <div id={styles.productItem__cartButtonWrapper}>
+                <button
+                  id={styles.productItem__cartButton}
+                  onClick={() => {
+                    dispatch(
+                      addToCart({ id, title, price, discont_price, image })
+                    );
+                    showToastSuccess(
+                      `"${title}"` + t("productItem__IsAddedToShoppingCart")
+                    );
+                  }}
+                >
+                  {t("productItem__AddToCartButtonText")}
+                </button>
+              </div>
+
+              <div className={styles.customDashedLinie}>&nbsp;</div>
+              <div id={styles.productItem__descriptionTitle}>
+                {t("productItem__DescriptionTitle")}
+              </div>
+              <figcaption id={styles.productItem__descriptionText}>
+                {description}
+              </figcaption>
+              <ToastContainerImpl />
             </div>
-            <figcaption id={styles.productItem__descriptionText}>
-              {description}
-            </figcaption>
-            <ToastContainerImpl />
           </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </>
   );
 };
 
