@@ -23,14 +23,14 @@ const CategoriesListItem: React.FC<TCategoriesListItemProps> = ({
       className={styles.link__decoration}
     >
       <div className={styles.catalog__categoryWrapper}>
-        <div className={styles.catalog__category}>
-          <figure className={styles.catalog__categoryImage}>
+        <figure className={styles.catalog__category}>
+          <div className={styles.catalog__categoryImage}>
             <img src={imgUrl} alt={title} title={title} />
-          </figure>
+          </div>
           <figcaption className={styles.catalog__categoryTitle}>
             {title}
           </figcaption>
-        </div>
+        </figure>
       </div>
     </NavLink>
   );

@@ -44,16 +44,16 @@ const ProductsListItem: React.FC<TProductsListItemProps> = ({
         to={`/product/${id}/${title}/`}
         className={styles.link__decoration}
       >
-        <div className={styles.offer__wrapper}>
-          <figure className={styles.offer__imageWrapper}>
+        <figure className={styles.offer__wrapper}>
+          <div className={styles.offer__imageWrapper}>
             <img src={imgUrl} alt={title} title={title} />
-          </figure>
+          </div>
           <ProductsListItemPriceWrapper
             price={price}
             discont_price={discont_price}
           />
           <figcaption className={styles.offer__title}>{title}</figcaption>
-        </div>
+        </figure>
       </NavLink>
 
       <button

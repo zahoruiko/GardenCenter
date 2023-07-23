@@ -111,9 +111,9 @@ const ProductItemWrapper: React.FC<TProductItemWrapperProps> = ({
               <div id={styles.productItem__descriptionTitle}>
                 {t("productItem__DescriptionTitle")}
               </div>
-              <figcaption id={styles.productItem__descriptionText}>
+              <article id={styles.productItem__descriptionText}>
                 {description}
-              </figcaption>
+              </article>
               <ToastContainerImpl />
             </div>
           </div>
