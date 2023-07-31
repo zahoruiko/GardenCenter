@@ -4,7 +4,7 @@ import Contacts from "../../CommonComponents/Contacts/Contacts";
 import Footer from "../../CommonComponents/Footer/Footer";
 import Header from "../../CommonComponents/Header/Header";
 import MainWrapper from "../../CommonComponents/MainWrapper/MainWrapper";
-import ProductsPageProductsListContainer from "../ProductsPageProductsList/ProductsPageProductsListDataFetch/ProductsPageProductsListDataFetch";
+import ProductsPageProductsListDataFetch from "../ProductsPageProductsList/ProductsPageProductsListDataFetch/ProductsPageProductsListDataFetch";
 
 import {
   TRenderErrorAdditionalParams,
@@ -29,7 +29,7 @@ const ProductsPageTemplate: React.FC<TProductsPageTemplateProps> = ({
     <>
       <MainWrapper>
         <Header />
-        <ProductsPageProductsListContainer
+        <ProductsPageProductsListDataFetch
           dataSourceUrl={dataSourceUrl}
           renderSuccessAdditionalParams={renderSuccessAdditionalParams}
           renderLoaderAdditionalParams={renderLoaderAdditionalParams}
