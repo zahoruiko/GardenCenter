@@ -6,3 +6,11 @@
   align-items: center;
   background-color: var(--footer-background);
 }
+
+@media (max-width: 700px) {
+  #footerWrapper {
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

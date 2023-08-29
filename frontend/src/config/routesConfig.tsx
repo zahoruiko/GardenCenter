@@ -37,7 +37,7 @@ export const RoutePath: Record<AppRoute, string> = {
   [AppRoute.NOT_FOUND]: "*",
 };
 
-export const routeConfig: Record<AppRoute, RouteProps> = {
+export const routesConfig: Record<AppRoute, RouteProps> = {
   [AppRoute.MAIN_PAGE]: {
     path: RoutePath.MAIN_PAGE,
     element: <MainPage />,

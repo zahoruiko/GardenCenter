@@ -52,6 +52,29 @@
 
 @media (max-width: 1440px) {
   #catalog__categoriesListWrapper {
-    justify-content: left;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 700px) { 
+  #catalog__header {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #catalog__headerTitle {
+    font-size: 35px;
+    line-height: 27px;
+  }
+
+  #catalog__buttonAllCategories {
+    size: 6px;
+    line-height: 10.6px;
+    margin-left: 26px;
+    text-align: center;
+  }
+
+  #catalog__categoriesListWrapper {
+    margin-bottom: 10px;
   }
 }

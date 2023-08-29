@@ -2,7 +2,10 @@ import { RootState } from '../redux/store';
 import { Theme, setTheme } from '../redux/slices/themeSlice';
 import { useAppDispatch, useAppSelector } from '../redux/reduxHooks';
 
-export type TuseThemeResult = [theme: Theme | undefined, toggleTheme: () => void]
+export type TuseThemeResult = [
+  theme: Theme | undefined, 
+  toggleTheme: () => void
+];
 
 export function useTheme(): TuseThemeResult {
   const dispatch = useAppDispatch();

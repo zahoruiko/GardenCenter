@@ -36,12 +36,20 @@ const Header = () => {
         <nav id={styles.header__menuWrapper}>
           <menu id={styles.header__menu}>
             <li>
-              <NavLink to="/" className={styles.header__menuItem}>
+              <NavLink
+                to="/"
+                className={styles.header__menuItem}
+                id={styles.header__menuMainPage}
+              >
                 {t("header__MainPageLinkText")}
               </NavLink>
             </li>
             <li>
-              <NavLink to="/allProducts" className={styles.header__menuItem}>
+              <NavLink
+                to="/allProducts"
+                className={styles.header__menuItem}
+                id={styles.header__menuAllProducts}
+              >
                 {t("header__AllProductsLinkText")}
               </NavLink>
             </li>
@@ -49,6 +57,7 @@ const Header = () => {
               <NavLink
                 to="/discountProducts"
                 className={styles.header__menuItem}
+                id={styles.header__menuDiscountedProducts}
               >
                 {t("header__AllSalesLinkText")}
               </NavLink>

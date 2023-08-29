@@ -12,6 +12,8 @@
 .offer__mainWrapper:hover {
   border: 1px solid var(--hover-border-color);
   box-shadow: 2px 2px 4px var(--box-shadow);
+  transform: scale(1.1);
+  background-color: var(--background-color);
 }
 
 .offer__wrapper {
@@ -117,4 +119,10 @@
   margin-right: 5px;
   font-size: 18px;
   line-height: 1;
+}
+
+@media (max-width: 700px) {
+  .offer__mainWrapper:hover {
+    transform: scale(1);
+  }
 }

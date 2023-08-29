@@ -239,21 +239,49 @@
   #offers__sortModeWrapper {
     margin-top: 10px;
   }
+
   #offers__searchTermInputWrapper {
     margin-top: 10px;
   }
+
   #offers__searchTermLabel {
     margin-left: 10px;
   }
+
   #offers__sortModeLabel {
     margin-left: 10px;
     margin-right: 20px;
   }
+
   #offers__searchTermInputWrapper {
     width: 200px;
-  } 
+  }
+
   .input__searchTerm {
     width: 170px;
+  }
+}
+
+@media (max-width: 600px) {
+  #offers__priceInputWrapperSecondField {
+    margin-left: 10px;
+  }
+
+  #offers__discountedOffersLabel {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  #input__sortMode {
+    width: 170px;
+  }
+
+  .input__offerPrice {
+    width: 68px;
+  }
+
+  .offers__priceInputWrapper {
+    width: 95px;
   }
 }
 

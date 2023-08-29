@@ -14,7 +14,6 @@ import {
   TCartState,
   removeAllItems,
 } from "../../../redux/slices/cartSlice";
-import { ToastContainerImpl } from "../../CommonComponents/Toasts/ToastContainer/ToastContainer";
 
 import styles from "./ShoppingCartOrderForm.module.css";
 
@@ -104,7 +103,6 @@ const ShoppingCartOrderForm = () => {
           {t("shoppingCart__FormSubmitButtonText")}
         </button>
       </form>
-      <ToastContainerImpl />
     </>
   );
 };

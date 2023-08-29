@@ -9,6 +9,7 @@ import MainWrapper from "../../components/CommonComponents/MainWrapper/MainWrapp
 import MainPageProductsListContainer from "../../components/Products/MainPageProductsList/MainPageProductsListContainer/MainPageProductsListContainer";
 import MainPageCategoriesContainer from "../../components/Categories/MainPageCategories/MainPageCategoriesContainer/MainPageCategoriesContainer";
 import PageMetaData from "../../components/CommonComponents/PageMetaData/PageMetaData";
+import { ToastContainerImpl } from "../../components/CommonComponents/Toasts/ToastContainer/ToastContainer";
 
 const MainPage = () => {
   const { t } = useTranslation();
@@ -23,6 +24,7 @@ const MainPage = () => {
       <MainPageCategoriesContainer />
       <GetDiscountForm />
       <MainPageProductsListContainer />
+      <ToastContainerImpl />
       <Contacts />
       <Footer />
     </MainWrapper>

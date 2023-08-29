@@ -1,5 +1,4 @@
 import ProductsListItem from "../ProductsListItem/ProductsListItem";
-import { ToastContainerImpl } from "../../CommonComponents/Toasts/ToastContainer/ToastContainer";
 
 import { TProductsListResponse } from "../../../hooks/useRemoteDataFetch";
 
@@ -13,7 +12,6 @@ const ProductsListRender: React.FC<TProductsListRenderProps> = ({ data }) => {
     <>
       {dataList &&
         dataList.map((data, i) => <ProductsListItem key={i} {...data} />)}
-      <ToastContainerImpl />
     </>
   );
 };

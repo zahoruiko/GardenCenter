@@ -25,9 +25,19 @@ const getThemeIcon = (
 
 const Contacts = () => {
   const { t } = useTranslation();
-  const currentTheme = useAppSelector((state: RootState) => state.theme.currentTheme);
-  const whatsAppIcon = getThemeIcon(currentTheme, whatsAppIconLight, whatsAppIconDark);
-  const instagramIcon = getThemeIcon(currentTheme, instagramIconLight, instagramIconDark);
+  const currentTheme = useAppSelector(
+    (state: RootState) => state.theme.currentTheme
+  );
+  const whatsAppIcon = getThemeIcon(
+    currentTheme,
+    whatsAppIconLight,
+    whatsAppIconDark
+  );
+  const instagramIcon = getThemeIcon(
+    currentTheme,
+    instagramIconLight,
+    instagramIconDark
+  );
 
   return (
     <footer id={styles.contacts__wrapper}>
@@ -40,14 +50,22 @@ const Contacts = () => {
           <div id={styles.contacts__socialLinksWrapper}>
             <div className={styles.contacts__socialLink}>
               <a href="https://instagram.com">
-                <img src={String(instagramIcon)} alt="Instagram" />
+                <img
+                  src={String(instagramIcon)}
+                  alt="Instagram"
+                  className={styles.contacts__socialLinkImage}
+                />
                 <br />
                 Instagram
               </a>
             </div>
             <div className={styles.contacts__socialLink}>
               <a href="https://whatsapp.com">
-                <img src={String(whatsAppIcon)} alt="WhatsApp" />
+                <img
+                  src={String(whatsAppIcon)}
+                  alt="WhatsApp"
+                  className={styles.contacts__socialLinkImage}
+                />
                 <br />
                 <span>WhatsApp</span>
               </a>

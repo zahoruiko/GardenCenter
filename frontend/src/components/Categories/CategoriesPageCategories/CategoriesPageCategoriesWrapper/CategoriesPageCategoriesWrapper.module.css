@@ -32,6 +32,6 @@
 
 @media (max-width: 1440px) {
   #catalog__categoriesListWrapper {
-    justify-content: left;
+    justify-content: space-evenly;
   }
 }

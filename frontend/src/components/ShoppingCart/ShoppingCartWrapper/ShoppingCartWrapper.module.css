@@ -148,10 +148,14 @@
 
   #shoppingCart__orderDetailsSummaryWrapper {
     margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+    margin-right: 0px;
   }
 
   #shoppingCart__cartDetails {
     width: 90%;
     margin-left: 31px;
+    margin-right: 30px;
   }
 }

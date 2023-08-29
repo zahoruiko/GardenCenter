@@ -28,11 +28,6 @@ type TRemoteDataFetchProps = {
   renderSuccessAdditionalParams?: TRenderSuccessAdditionalParams;
   loadingFallback: JSX.Element;
   renderError?: any;
-  // renderError?:
-  //   | FC<TCategoriesListRenderProps>
-  //   | FC<TProductsListRenderProps>
-  //   | FC<TProductsPageProductsListContainerProps>
-  //   | FC<TProductItemWrapperProps>;
   renderErrorAdditionalParams?: TRenderErrorAdditionalParams;
   hooks?: TRenderHooks;
 };

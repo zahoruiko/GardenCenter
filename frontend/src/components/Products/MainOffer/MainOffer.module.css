@@ -84,3 +84,30 @@
     transition: ease 0.3s;
   }
 }
+
+@media (max-width: 700px) {
+
+  #mainOffer__wrapper {
+    height: 230px;
+    margin-top: 120px;
+  }
+
+  #mainOffer__detailsTitle {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  #mainOffer__detailsMessage {
+    font-size: 33px;
+    line-height: 41.9px;
+    margin-bottom: 30px;
+  }
+
+  #mainOffer__detailsButton {
+    padding: 10px 10px;
+    font-size: 15px;
+    font-size: 25px;
+    line-height: 18.5px;
+    height: 42px;
+  }
+}

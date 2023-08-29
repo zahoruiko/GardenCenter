@@ -18,6 +18,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: left;
   gap: 25px;
   margin-top: 34px;
+}
+
+@media (max-width: 1400px) { 
+  #offers__listWrapper {
+    justify-content: space-evenly;
+  } 
 }

@@ -1,5 +1,5 @@
 #offers__mainWrapper {
-  padding: 49px 20px;
+  padding: 49px 18px;
 }
 
 #offers__saleTitle {
@@ -15,14 +15,13 @@
 #offers__listWrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 25px;
+  justify-content: space-evenly;
+  margin-top: 34px;
 }
 
 @media (max-width: 1440px) {
   #offers__listWrapper {
-    justify-content: left;
+    justify-content: space-evenly;
   }
 }

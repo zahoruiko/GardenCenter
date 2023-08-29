@@ -59,3 +59,13 @@
   font-weight: bold;
   padding-left: 14px;
 }
+
+@media (max-width: 600px) {
+  #shoppingCart__customerPhoneInputWrapper {
+    width: 100%; 
+  }
+
+  #shoppingCart__formSubmit {
+    width: 100%; 
+  }
+}

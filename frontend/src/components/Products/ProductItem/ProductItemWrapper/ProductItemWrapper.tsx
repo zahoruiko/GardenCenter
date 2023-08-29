@@ -6,7 +6,6 @@ import { UseTranslationResponse } from "react-i18next";
 
 import PageMetaData from "../../../CommonComponents/PageMetaData/PageMetaData";
 import ProductItemPriceWrapper from "../ProductItemPriceWrapper/ProductItemPriceWrapper";
-import { ToastContainerImpl } from "../../../CommonComponents/Toasts/ToastContainer/ToastContainer";
 import { backendUrl } from "../../../../config/mainConstants";
 import { sanitizeCharsNumbersSpezChars } from "../../../../utils/filterSpecialChars";
 import { showToastSuccess } from "../../../CommonComponents/Toasts/toasts";
@@ -114,7 +113,6 @@ const ProductItemWrapper: React.FC<TProductItemWrapperProps> = ({
               <article id={styles.productItem__descriptionText}>
                 {description}
               </article>
-              <ToastContainerImpl />
             </div>
           </div>
         </div>

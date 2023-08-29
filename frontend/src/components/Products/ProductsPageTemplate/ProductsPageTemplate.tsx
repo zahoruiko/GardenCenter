@@ -11,6 +11,7 @@ import {
   TRenderLoaderAdditionalParams,
   TRenderSuccessAdditionalParams,
 } from "../@Types/ProductTypes";
+import { ToastContainerImpl } from "../../CommonComponents/Toasts/ToastContainer/ToastContainer";
 
 type TProductsPageTemplateProps = {
   dataSourceUrl: string;
@@ -35,6 +36,7 @@ const ProductsPageTemplate: React.FC<TProductsPageTemplateProps> = ({
           renderLoaderAdditionalParams={renderLoaderAdditionalParams}
           renderErrorAdditionalParams={renderErrorAdditionalParams}
         />
+        <ToastContainerImpl />
         <Contacts />
         <Footer />
       </MainWrapper>

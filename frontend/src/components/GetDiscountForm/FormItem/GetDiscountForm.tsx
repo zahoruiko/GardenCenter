@@ -1,7 +1,6 @@
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 
-import { ToastContainerImpl } from "../../CommonComponents/Toasts/ToastContainer/ToastContainer";
 import { sendPostRequest } from "../../../utils/sendPostRequest";
 import { showToastSuccess } from "../../CommonComponents/Toasts/toasts";
 
@@ -57,7 +56,6 @@ const GetDiscountForm = () => {
           {t("mainPage__GetDiscountFormSubmitButtonText")}
         </button>
       </form>
-      <ToastContainerImpl />
     </>
   );
 };

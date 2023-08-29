@@ -62,7 +62,7 @@ const ProductsListFilterForm: React.FC<TProductsListFilterFormProps> = ({
     navigate(firstPartUrl);
   };
 
-  const filterSortDirecrtionOptions = [
+  const filterSortDirectionOptions = [
     { value: 0, label: t("productsFilter__SortModeOption0") },
     { value: 1, label: t("productsFilter__SortModeOption1") },
     { value: 2, label: t("productsFilter__SortModeOption2") },
@@ -116,7 +116,7 @@ const ProductsListFilterForm: React.FC<TProductsListFilterFormProps> = ({
           )}
         </span>
 
-        <span className={styles.offers__priceInputWrapper}>
+        <span className={styles.offers__priceInputWrapper} id={styles.offers__priceInputWrapperSecondField}>
           <input
             type="text"
             name="maxPrice"
@@ -159,7 +159,7 @@ const ProductsListFilterForm: React.FC<TProductsListFilterFormProps> = ({
             value={currentSortModeState}
             onChange={handleChangeSortMode}
           >
-            {filterSortDirecrtionOptions.map((option) => (
+            {filterSortDirectionOptions.map((option) => (
               <option key={option.value} value={option.value}>
                 {option.label}
               </option>

@@ -59,3 +59,16 @@
   letter-spacing: 0.03em;
   font-family: var(--font-family);
 }
+
+@media (max-width: 600px) {
+  .shoppingCart__itemPriceWrapper {
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .shoppingCart__itemActualPrice {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}

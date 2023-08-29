@@ -106,3 +106,16 @@
   font-weight: bold;
   padding-left: 40px;
 }
+
+@media (max-width: 700px) {
+  #getDiscount__formInputWrapper{
+    width: 90%;
+  }
+  #getDiscount__formInput {
+    width: 90%;
+  }
+  #getDiscount__formSubmit {
+    width: 90%;
+    height: 55.44px; 
+  }
+}

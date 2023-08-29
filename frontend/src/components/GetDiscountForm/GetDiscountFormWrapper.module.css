@@ -54,3 +54,23 @@
     transition: ease 0.3s;
   }
 }
+
+@media (max-width: 700px) {
+  #getDiscount__wrapper {
+    height: 360px;
+  }
+  
+  #getDiscount__formTitle {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  #getDiscount__formInfoText {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  #getDiscount__formWrapper {
+    margin-left: 20px;
+  }
+}
