@@ -27,25 +27,25 @@ The site responds at [http://localhost:3000](http://localhost:3000)
 
 ### Home page
 
-<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/HomePage.png" width="300" />
+<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/HomePage.png" width="400" />
 
 ### Categories list
 
-<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/CategoriesListPage.png" width="300" />
+<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/CategoriesListPage.png" width="400" />
 
 ### Category offers list
 
-<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/CategoryOffers.png" width="300" />
+<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/CategoryOffers.png" width="400" />
 
 ### Offer details
 
-<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/OfferDetails.png" width="300" />
+<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/OfferDetails.png" width="400" />
 
 ### Shopping cart
 
-<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/ShoppingCartContent.png" width="300" />
+<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/ShoppingCartContent.png" width="400" />
 
 ### Not found page
 
-<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/NotFoundPage.png" width="300" />
+<img src="https://github.com/zahoruiko/GardenCenter/blob/main/frontend/readmeImages/NotFoundPage.png" width="400" />
 
