@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 export enum TTranslation {
   ENGLISH = 'en',
@@ -6,7 +6,7 @@ export enum TTranslation {
 }
 
 const translationSlice = createSlice({
-  name: "translation",
+  name: 'translation',
   initialState: {
     translationCode: TTranslation.ENGLISH,
   },
@@ -19,6 +19,4 @@ const translationSlice = createSlice({
 
 export const translationReducer = translationSlice.reducer;
 
-export const {
-  setTranslationCode,
-} = translationSlice.actions;
+export const { setTranslationCode } = translationSlice.actions;

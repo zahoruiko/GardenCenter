@@ -1,9 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const searchProductsSlice = createSlice({
-  name: "searchProducts",
+  name: 'searchProducts',
   initialState: {
-    searchTerm: "",
+    searchTerm: '',
   },
   reducers: {
     setSearchTerm: (state, action) => {
@@ -14,6 +14,4 @@ const searchProductsSlice = createSlice({
 
 export const searchProductsReducer = searchProductsSlice.reducer;
 
-export const {
-  setSearchTerm,
-} = searchProductsSlice.actions;
+export const { setSearchTerm } = searchProductsSlice.actions;

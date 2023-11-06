@@ -1,5 +1,5 @@
-import axios from "../axios";
-import { isJson } from "./checkJson";
+import axios from '../axios';
+import { isJson } from './checkJson';
 
 export const sendPostRequest = async (targetUrl: string, data: any) => {
   if (!targetUrl) return false;
@@ -7,7 +7,7 @@ export const sendPostRequest = async (targetUrl: string, data: any) => {
   const stringifiedJson = JSON.stringify(data);
   await axios
     .post(targetUrl, stringifiedJson, {
-      headers: { "Content-Type": "application/json;charset=utf-8" },
+      headers: { 'Content-Type': 'application/json;charset=utf-8' },
     })
     .then(console.log)
     .catch(console.error);

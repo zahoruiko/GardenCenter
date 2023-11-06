@@ -1,11 +1,14 @@
-import { AxiosError } from "axios";
-import { useState, useEffect } from "react";
+import {
+  useEffect,
+  useState,
+} from 'react';
 
-import axios from "../axios";
+import { AxiosError } from 'axios';
+
+import axios from '../axios';
+import { TCategoryItem } from '../components/Categories/@Types/CategoryTypes';
+import { TProductItem } from '../components/Products/@Types/ProductTypes';
 import { useDebouncedValue } from './useDebouncedValue';
-
-import { TCategoryItem } from "../components/Categories/@Types/CategoryTypes";
-import { TProductItem } from "../components/Products/@Types/ProductTypes";
 
 export type TProductsListResponse = {
   status: string;
@@ -20,7 +23,9 @@ export type TCategoriesListResponse = {
 };
 
 export function useRemoteDataFetch(uri: string) {
-  const [data, setData] = useState<TProductsListResponse | TCategoriesListResponse | any>();
+  const [data, setData] = useState<
+    TProductsListResponse | TCategoriesListResponse | any
+  >();
   const [error, setError] = useState<AxiosError>();
   const [loading, setLoading] = useState(true);
   const debounceTime = 600;
@@ -29,24 +34,25 @@ export function useRemoteDataFetch(uri: string) {
   useEffect(() => {
     if (!debouncedUri) return;
     const getRemoteData = async () => {
-      await axios.get<TProductsListResponse | TCategoriesListResponse>(debouncedUri)
-        .then(data => {
+      await axios
+        .get<TProductsListResponse | TCategoriesListResponse>(debouncedUri)
+        .then((data) => {
           setData(data);
           setError(undefined);
           setLoading(false);
         })
-        .catch(error => {
-          setError(error)
+        .catch((error) => {
+          setError(error);
           setData(undefined);
           setLoading(false);
         });
-    }
+    };
     getRemoteData();
   }, [debouncedUri]);
 
   return {
     loading,
     data,
-    error
+    error,
   };
-};
+}

@@ -1,8 +1,14 @@
-import { useEffect, useState } from 'react';
+import {
+  useEffect,
+  useState,
+} from 'react';
 
-import { getMinPrice, getMaxPrice } from './utils/getMinMaxPrice';
-import { getQuerySortParams } from './utils/getQuerySortParams';
 import { useAppSelector } from '../redux/reduxHooks';
+import {
+  getMaxPrice,
+  getMinPrice,
+} from './utils/getMinMaxPrice';
+import { getQuerySortParams } from './utils/getQuerySortParams';
 
 export const useAllDiscountedProductsSourceDataUrl = (listCurrentPart: number, limit: number) => {
   let offset = listCurrentPart * limit;

@@ -1,13 +1,13 @@
 import { RouteProps } from "react-router-dom";
 
-import AllProductsPage from "../pages/AllProductsPage/AllProductsPage";
-import CategoriesPage from "../pages/CategoriesPage/CategoriesPage";
-import CategoryProductsPage from "../pages/CategoryProductsPage/CategoryProductsPage";
-import DiscountProductsPage from "../pages/DiscountProductsPage/DiscountProductsPage";
-import MainPage from "../pages/MainPage/MainPage";
-import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
-import ProductPage from "../pages/ProductPage/ProductPage";
-import ShoppingCartPage from "../pages/ShoppingCartPage/ShoppingCartPage";
+import AllProductsPage from "../pages/AllProductsPage";
+import CategoriesPage from "../pages/CategoriesPage";
+import CategoryProductsPage from "../pages/CategoryProductsPage";
+import DiscountProductsPage from "../pages/DiscountProductsPage";
+import MainPage from "../pages/MainPage";
+import NotFoundPage from "../pages/NotFoundPage";
+import ProductPage from "../pages/ProductPage";
+import ShoppingCartPage from "../pages/ShoppingCartPage";
 
 export enum AppRoute {
   MAIN_PAGE = "MAIN_PAGE",

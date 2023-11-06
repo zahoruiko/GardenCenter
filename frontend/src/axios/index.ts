@@ -1,11 +1,9 @@
-import axios from "axios";
+import axios from 'axios';
 
-import { backendUrl } from "../config/mainConstants";
+import { backendUrl } from '../config/mainConstants';
 
-const instance = axios.create(
-  {
-    baseURL: backendUrl,
-  }
-);
+const instance = axios.create({
+  baseURL: backendUrl,
+});
 
 export default instance;

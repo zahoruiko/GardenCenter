@@ -4,7 +4,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { Provider } from "react-redux";
 
 import App from "./App";
-import DataLoadingSpinner from "./components/CommonComponents/DataLoadingSpinner/DataLoadingSpinner";
+import DataLoadingSpinner from "./components/CommonComponents/DataLoadingSpinner";
 import { persistor, store } from "./redux/store";
 import "./config/i18n";
 

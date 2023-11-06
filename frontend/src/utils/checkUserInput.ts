@@ -40,4 +40,4 @@ const isValidPrice = (price: number) => {
 
 exports.isValidPrice = isValidPrice;
 
-export { }; // this is necessary to disable the import error of this file
+export {}; // this is necessary to disable the import error of this file

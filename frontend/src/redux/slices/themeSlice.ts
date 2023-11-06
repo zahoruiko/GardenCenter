@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 export enum Theme {
   LIGHT = 'light',
@@ -6,7 +6,7 @@ export enum Theme {
 }
 
 const themeSlice = createSlice({
-  name: "theme",
+  name: 'theme',
   initialState: {
     currentTheme: Theme.LIGHT,
   },

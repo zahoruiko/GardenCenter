@@ -1,33 +1,34 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 import {
-  persistStore,
-  persistReducer,
   FLUSH,
-  REHYDRATE,
   PAUSE,
   PERSIST,
+  persistReducer,
+  persistStore,
   PURGE,
   REGISTER,
-} from "redux-persist";
-import storage from "redux-persist/lib/storage";
+  REHYDRATE,
+} from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
-import { cartReducer } from "./slices/cartSlice";
-import { productsListFilterReducer } from "./slices/productsListFilterSlice";
-import { searchProductsReducer } from "./slices/searchProductsSlice";
-import { themeReducer } from "./slices/themeSlice";
-import { translationReducer } from "./slices/translationSlice";
+import { configureStore } from '@reduxjs/toolkit';
+
+import { cartReducer } from './slices/cartSlice';
+import { productsListFilterReducer } from './slices/productsListFilterSlice';
+import { searchProductsReducer } from './slices/searchProductsSlice';
+import { themeReducer } from './slices/themeSlice';
+import { translationReducer } from './slices/translationSlice';
 
 const rootReducer = combineReducers({
   cart: cartReducer,
   search: searchProductsReducer,
   sort: productsListFilterReducer,
   theme: themeReducer,
-  translation: translationReducer
+  translation: translationReducer,
 });
 
 const persistConfig = {
-  key: "gartenZentrum",
+  key: 'gartenZentrum',
   storage,
 };
 

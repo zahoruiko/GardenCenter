@@ -4,7 +4,7 @@ export type TProductItem = {
   price: number;
   discont_price: number;
   image: string;
-}
+};
 
 export type TRenderSuccessAdditionalParams = {
   title: string;

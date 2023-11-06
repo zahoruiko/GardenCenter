@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 import type { RootState } from '../store';
 
@@ -9,19 +9,19 @@ type TProductsListFilterSliceState = {
   sortMode: number;
   sortField: string;
   sortDirection: string;
-}
+};
 
 const initialState: TProductsListFilterSliceState = {
-  minPrice: "",
-  maxPrice: "",
+  minPrice: '',
+  maxPrice: '',
   showOnlyDiscountedProducts: false,
   sortMode: 0,
-  sortField: "title",
-  sortDirection: "asc",
+  sortField: 'title',
+  sortDirection: 'asc',
 };
 
 const productsListFilterSlice = createSlice({
-  name: "productsListFilter",
+  name: 'productsListFilter',
   initialState,
   reducers: {
     setMinPrice: (state, action) => {
