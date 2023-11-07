@@ -1,17 +1,18 @@
 # Garden Center
 
 React JS + Node JS: Implementation of an educational project at the International tech school [Tel-Ran.de](https://tel-ran.de)  
+The design of the site pages according to the design assignment is located [here](https://www.figma.com/file/yNWvXvjZC0t8d9yBOpeEPy/Garden?type=design&node-id=4743-1095&t=JkSgOidnPJLWZMmH-0).
 Additionally, the following features are implemented:  
 - switching the language of the interface texts to English and German  
 - switching between "light" and "dark" interface themes
-  
+
 ## Launch preparation
 
 Clone the repository and run the `npm install` command in the "frontend" and "backend" folders to install the required modules
 
 ## Server start
 
-Open "backend" folder and run there the command `npm run dev`.
+Open "backend" folder and run there the command `npm start`.
 
 The server responds at [http://localhost:3333](http://localhost:3333)
 
