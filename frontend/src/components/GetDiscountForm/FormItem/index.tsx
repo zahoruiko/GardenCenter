@@ -1,11 +1,11 @@
+import { showToastSuccess } from 'components/CommonComponents/Toasts/toasts';
 import {
   SubmitHandler,
   useForm,
 } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
+import { sendPostRequest } from 'utils/sendPostRequest';
 
-import { sendPostRequest } from '../../../utils/sendPostRequest';
-import { showToastSuccess } from '../../CommonComponents/Toasts/toasts';
 import styles from './styles.module.css';
 
 type TFormValues = {

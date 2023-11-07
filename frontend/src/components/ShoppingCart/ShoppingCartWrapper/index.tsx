@@ -1,14 +1,14 @@
 import React from 'react';
 
+import { showToastSuccess } from 'components/CommonComponents/Toasts/toasts';
 import { useTranslation } from 'react-i18next';
-
 import {
   useAppDispatch,
   useAppSelector,
-} from '../../../redux/reduxHooks';
-import { removeAllItems } from '../../../redux/slices/cartSlice';
-import { RootState } from '../../../redux/store';
-import { showToastSuccess } from '../../CommonComponents/Toasts/toasts';
+} from 'redux/reduxHooks';
+import { removeAllItems } from 'redux/slices/cartSlice';
+import { RootState } from 'redux/store';
+
 import ShoppingCartOrderForm from '../ShoppingCartOrderForm';
 import styles from './styles.module.css';
 

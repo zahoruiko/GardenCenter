@@ -1,4 +1,5 @@
-import { TProductsListResponse } from '../../../hooks/useRemoteDataFetch';
+import { TProductsListResponse } from 'hooks/useRemoteDataFetch';
+
 import ProductsListItem from '../ProductsListItem';
 
 export type TProductsListRenderProps = {

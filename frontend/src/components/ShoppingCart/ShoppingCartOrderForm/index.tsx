@@ -1,27 +1,27 @@
 import {
+  showToastSuccess,
+  showToastWarning,
+} from 'components/CommonComponents/Toasts/toasts';
+import {
   SubmitHandler,
   useForm,
 } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
-
 import {
   useAppDispatch,
   useAppSelector,
-} from '../../../redux/reduxHooks';
+} from 'redux/reduxHooks';
 import {
   removeAllItems,
   TCartItem,
   TCartState,
-} from '../../../redux/slices/cartSlice';
+} from 'redux/slices/cartSlice';
 import {
   AppDispatch,
   RootState,
-} from '../../../redux/store';
-import { sendPostRequest } from '../../../utils/sendPostRequest';
-import {
-  showToastSuccess,
-  showToastWarning,
-} from '../../CommonComponents/Toasts/toasts';
+} from 'redux/store';
+import { sendPostRequest } from 'utils/sendPostRequest';
+
 import styles from './styles.module.css';
 
 type TFormValues = {

@@ -2,8 +2,8 @@ import { useTranslation } from 'react-i18next';
 import { LiaShoppingBagSolid } from 'react-icons/lia';
 import { NavLink } from 'react-router-dom';
 
-import { useAppSelector } from '../../../redux/reduxHooks';
-import { RootState } from '../../../redux/store';
+import { useAppSelector } from 'redux/reduxHooks';
+import { RootState } from 'redux/store';
 import styles from './styles.module.css';
 
 const Header = () => {

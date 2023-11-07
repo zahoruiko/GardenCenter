@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 
-import { useAppDispatch } from '../redux/reduxHooks';
+import { useAppDispatch } from 'redux/reduxHooks';
 import {
   setMaxPrice,
   setMinPrice,
   setShowOnlyDiscountedProducts,
   setSortMode,
-} from '../redux/slices/productsListFilterSlice';
-import { setSearchTerm } from '../redux/slices/searchProductsSlice';
+} from 'redux/slices/productsListFilterSlice';
+import { setSearchTerm } from 'redux/slices/searchProductsSlice';
 
 export const useClearSearchFilterParams = () => {
   const dispatch = useAppDispatch();

@@ -2,8 +2,8 @@ import React from 'react';
 
 import { NavLink } from 'react-router-dom';
 
-import { backendUrl } from '../../../config/mainConstants';
 import styles from './styles.module.css';
+import { backendUrl } from 'config/mainConstants';
 
 export type TCategoriesListItemProps = {
   id: number;

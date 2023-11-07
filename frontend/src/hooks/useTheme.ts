@@ -1,12 +1,12 @@
 import {
   useAppDispatch,
   useAppSelector,
-} from '../redux/reduxHooks';
+} from 'redux/reduxHooks';
 import {
   setTheme,
   Theme,
-} from '../redux/slices/themeSlice';
-import { RootState } from '../redux/store';
+} from 'redux/slices/themeSlice';
+import { RootState } from 'redux/store';
 
 export type TuseThemeResult = [
   theme: Theme | undefined,

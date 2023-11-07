@@ -1,12 +1,13 @@
 import React from 'react';
 
-import Contacts from '../../CommonComponents/Contacts';
-import Footer from '../../CommonComponents/Footer';
-import Header from '../../CommonComponents/Header';
-import MainWrapper from '../../CommonComponents/MainWrapper';
+import Contacts from 'components/CommonComponents/Contacts';
+import Footer from 'components/CommonComponents/Footer';
+import Header from 'components/CommonComponents/Header';
+import MainWrapper from 'components/CommonComponents/MainWrapper';
 import {
   ToastContainerImpl,
-} from '../../CommonComponents/Toasts/ToastContainer';
+} from 'components/CommonComponents/Toasts/ToastContainer';
+
 import {
   TRenderErrorAdditionalParams,
   TRenderLoaderAdditionalParams,

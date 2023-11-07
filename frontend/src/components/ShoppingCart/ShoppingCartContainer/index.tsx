@@ -4,8 +4,8 @@ import {
   CSSTransition,
   TransitionGroup,
 } from 'react-transition-group';
+import { useAppSelector } from 'redux/reduxHooks';
 
-import { useAppSelector } from '../../../redux/reduxHooks';
 import ShoppingCartIsEmpty from '../ShoppingCartIsEmpty';
 import ShoppingCartItem from '../ShoppingCartItem';
 import ShoppingCartWrapper from '../ShoppingCartWrapper';

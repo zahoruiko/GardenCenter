@@ -1,15 +1,16 @@
-import { useAppSelector } from '../../../../redux/reduxHooks';
-import { Theme } from '../../../../redux/slices/themeSlice';
-import { RootState } from '../../../../redux/store';
-import DummysListRender from '../../../CommonComponents/DummysListRender';
-import RemoteDataFetch from '../../../CommonComponents/RemoteDataFetch';
 import {
   CategoriesListItemDummy,
-} from '../../CategoriesListItem/CategoriesListItemDummy/CategoriesListItemDummy';
+} from 'components/Categories/CategoriesListItem/CategoriesListItemDummy/CategoriesListItemDummy';
 import {
   CategoriesListItemDummyDark,
-} from '../../CategoriesListItem/CategoriesListItemDummy/CategoriesListItemDummyDark';
-import CategoriesListRender from '../../CategoriesListRender';
+} from 'components/Categories/CategoriesListItem/CategoriesListItemDummy/CategoriesListItemDummyDark';
+import CategoriesListRender from 'components/Categories/CategoriesListRender';
+import DummysListRender from 'components/CommonComponents/DummysListRender';
+import RemoteDataFetch from 'components/CommonComponents/RemoteDataFetch';
+import { useAppSelector } from 'redux/reduxHooks';
+import { Theme } from 'redux/slices/themeSlice';
+import { RootState } from 'redux/store';
+
 import MainPageCategoriesWrapper from '../MainPageCategoriesWrapper';
 
 const MainPageCategoriesContainer = () => {

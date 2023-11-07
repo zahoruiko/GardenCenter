@@ -1,4 +1,4 @@
-import { TCategoriesListResponse } from '../../../hooks/useRemoteDataFetch';
+import { TCategoriesListResponse } from 'hooks/useRemoteDataFetch';
 import CategoriesListItem from '../CategoriesListItem';
 
 export type TCategoriesListRenderProps = {

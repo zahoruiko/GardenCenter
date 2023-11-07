@@ -2,18 +2,16 @@ import React from 'react';
 
 import { NavigateFunction } from 'react-router-dom';
 
-import {
-  sanitizeCharsNumbersSpezChars,
-} from '../../../../utils/filterSpecialChars';
-import { TCategoryItem } from '../../../Categories/@Types/CategoryTypes';
+import { sanitizeCharsNumbersSpezChars } from 'utils/filterSpecialChars';
+
+import ProductsPageProductsListWrapper from '../ProductsPageProductsListWrapper';
+import { TCategoryItem } from 'components/Categories/@Types/CategoryTypes';
 import {
   TProductItem,
   TRenderErrorAdditionalParams,
   TRenderLoaderAdditionalParams,
   TRenderSuccessAdditionalParams,
-} from '../../@Types/ProductTypes';
-import ProductsPageProductsListWrapper
-  from '../ProductsPageProductsListWrapper';
+} from 'components/Products/@Types/ProductTypes';
 
 export type TProductsPageProductsListContainerProps = {
   data?: TProductsListData;

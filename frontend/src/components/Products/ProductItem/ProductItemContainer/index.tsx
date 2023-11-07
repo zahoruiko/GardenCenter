@@ -3,21 +3,21 @@ import {
   useState,
 } from 'react';
 
+import RemoteDataFetch from 'components/CommonComponents/RemoteDataFetch';
 import { useTranslation } from 'react-i18next';
 import {
   useNavigate,
   useParams,
 } from 'react-router-dom';
-
 import {
   useAppDispatch,
   useAppSelector,
-} from '../../../../redux/reduxHooks';
-import { TCartItem } from '../../../../redux/slices/cartSlice';
-import { Theme } from '../../../../redux/slices/themeSlice';
-import { RootState } from '../../../../redux/store';
-import { sanitizeNumbers } from '../../../../utils/filterSpecialChars';
-import RemoteDataFetch from '../../../CommonComponents/RemoteDataFetch';
+} from 'redux/reduxHooks';
+import { TCartItem } from 'redux/slices/cartSlice';
+import { Theme } from 'redux/slices/themeSlice';
+import { RootState } from 'redux/store';
+import { sanitizeNumbers } from 'utils/filterSpecialChars';
+
 import ProductItemWrapper from '../ProductItemWrapper';
 import ProductPageDummy from '../ProductPageDummy/ProductPageDummy';
 import ProductPageDummyDark from '../ProductPageDummy/ProductPageDummyDark';

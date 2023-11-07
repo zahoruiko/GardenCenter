@@ -1,13 +1,14 @@
-import { useAppSelector } from '../../../../redux/reduxHooks';
-import { Theme } from '../../../../redux/slices/themeSlice';
-import { RootState } from '../../../../redux/store';
-import DummysListRender from '../../../CommonComponents/DummysListRender';
-import RemoteDataFetch from '../../../CommonComponents/RemoteDataFetch';
+import DummysListRender from 'components/CommonComponents/DummysListRender';
+import RemoteDataFetch from 'components/CommonComponents/RemoteDataFetch';
 import ProductsListItemDummy
-  from '../../ProductsListItem/ProductsListItemDummy/ProductsListItemDummy';
+  from 'components/Products/ProductsListItem/ProductsListItemDummy/ProductsListItemDummy';
 import ProductsListItemDummyDark
-  from '../../ProductsListItem/ProductsListItemDummy/ProductsListItemDummyDark';
-import ProductsListRender from '../../ProductsListRender';
+  from 'components/Products/ProductsListItem/ProductsListItemDummy/ProductsListItemDummyDark';
+import ProductsListRender from 'components/Products/ProductsListRender';
+import { useAppSelector } from 'redux/reduxHooks';
+import { Theme } from 'redux/slices/themeSlice';
+import { RootState } from 'redux/store';
+
 import MainPageProductsListWrapper from '../MainPageProductsListWrapper';
 
 const MainPageProductsListContainer = () => {

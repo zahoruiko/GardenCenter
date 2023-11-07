@@ -2,16 +2,16 @@ import './ShoppingCartItemTransition.css';
 
 import React from 'react';
 
+import { backendUrl } from 'config/mainConstants';
 import { MdOutlineClear } from 'react-icons/md';
 import { NavLink } from 'react-router-dom';
-
-import { backendUrl } from '../../../config/mainConstants';
-import { useAppDispatch } from '../../../redux/reduxHooks';
+import { useAppDispatch } from 'redux/reduxHooks';
 import {
   decrementQuantity,
   incrementQuantity,
   removeItem,
-} from '../../../redux/slices/cartSlice';
+} from 'redux/slices/cartSlice';
+
 import ShoppingCartItemPrice from '../ShoppingCartItemPrice';
 import styles from './styles.module.css';
 

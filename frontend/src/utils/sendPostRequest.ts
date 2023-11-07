@@ -1,4 +1,4 @@
-import axios from '../axios';
+import axios from '../fetcher';
 import { isJson } from './checkJson';
 
 export const sendPostRequest = async (targetUrl: string, data: any) => {

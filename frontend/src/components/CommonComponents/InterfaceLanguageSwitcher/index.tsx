@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 
 import { useTranslation } from 'react-i18next';
-
 import {
   useAppDispatch,
   useAppSelector,
-} from '../../../redux/reduxHooks';
-import { setTranslationCode } from '../../../redux/slices/translationSlice';
-import { RootState } from '../../../redux/store';
+} from 'redux/reduxHooks';
+import { setTranslationCode } from 'redux/slices/translationSlice';
+import { RootState } from 'redux/store';
+
 import styles from './styles.module.css';
 
 const InterfaceLanguageSwitcher = () => {

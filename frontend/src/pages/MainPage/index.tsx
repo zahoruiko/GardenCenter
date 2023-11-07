@@ -1,20 +1,19 @@
-import { useTranslation } from 'react-i18next';
-
 import MainPageCategoriesContainer
-  from '../../components/Categories/MainPageCategories/MainPageCategoriesContainer';
-import Contacts from '../../components/CommonComponents/Contacts';
-import Footer from '../../components/CommonComponents/Footer';
-import Header from '../../components/CommonComponents/Header';
-import MainWrapper from '../../components/CommonComponents/MainWrapper';
-import PageMetaData from '../../components/CommonComponents/PageMetaData';
+  from 'components/Categories/MainPageCategories/MainPageCategoriesContainer';
+import Contacts from 'components/CommonComponents/Contacts';
+import Footer from 'components/CommonComponents/Footer';
+import Header from 'components/CommonComponents/Header';
+import MainWrapper from 'components/CommonComponents/MainWrapper';
+import PageMetaData from 'components/CommonComponents/PageMetaData';
 import {
   ToastContainerImpl,
-} from '../../components/CommonComponents/Toasts/ToastContainer';
-import GetDiscountForm from '../../components/GetDiscountForm';
-import MainOffer from '../../components/Products/MainOffer';
+} from 'components/CommonComponents/Toasts/ToastContainer';
+import GetDiscountForm from 'components/GetDiscountForm';
+import MainOffer from 'components/Products/MainOffer';
 import MainPageProductsListContainer
-  from '../../components/Products/MainPageProductsList/MainPageProductsListContainer';
-import useScrollToTop from '../../hooks/useScrollToTop';
+  from 'components/Products/MainPageProductsList/MainPageProductsListContainer';
+import useScrollToTop from 'hooks/useScrollToTop';
+import { useTranslation } from 'react-i18next';
 
 const MainPage = () => {
   useScrollToTop();

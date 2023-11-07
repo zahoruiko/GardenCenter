@@ -3,14 +3,14 @@ import {
   useState,
 } from 'react';
 
+import { useTheme } from 'hooks/useTheme';
 import {
   BsMoon,
   BsSun,
 } from 'react-icons/bs';
+import { useAppSelector } from 'redux/reduxHooks';
+import { RootState } from 'redux/store';
 
-import { useTheme } from '../../../hooks/useTheme';
-import { useAppSelector } from '../../../redux/reduxHooks';
-import { RootState } from '../../../redux/store';
 import styles from './styles.module.css';
 
 const ThemeSwitcher = () => {

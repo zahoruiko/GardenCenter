@@ -5,8 +5,8 @@ import {
   Routes,
 } from 'react-router-dom';
 
-import { routesConfig } from './config/routesConfig';
-import { useTheme } from './hooks/useTheme';
+import { routesConfig } from 'config/routesConfig';
+import { useTheme } from 'hooks/useTheme';
 
 function App() {
   const [theme] = useTheme();

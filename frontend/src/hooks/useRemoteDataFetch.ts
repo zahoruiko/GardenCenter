@@ -4,10 +4,10 @@ import {
 } from 'react';
 
 import { AxiosError } from 'axios';
+import { TCategoryItem } from 'components/Categories/@Types/CategoryTypes';
+import { TProductItem } from 'components/Products/@Types/ProductTypes';
+import axios from 'fetcher';
 
-import axios from '../axios';
-import { TCategoryItem } from '../components/Categories/@Types/CategoryTypes';
-import { TProductItem } from '../components/Products/@Types/ProductTypes';
 import { useDebouncedValue } from './useDebouncedValue';
 
 export type TProductsListResponse = {

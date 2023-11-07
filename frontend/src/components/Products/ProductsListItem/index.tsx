@@ -3,20 +3,20 @@ import React, {
   useState,
 } from 'react';
 
+import { showToastSuccess } from 'components/CommonComponents/Toasts/toasts';
+import { backendUrl } from 'config/mainConstants';
 import { LiaShoppingBagSolid } from 'react-icons/lia';
 import { NavLink } from 'react-router-dom';
-
-import { backendUrl } from '../../../config/mainConstants';
 import {
   useAppDispatch,
   useAppSelector,
-} from '../../../redux/reduxHooks';
+} from 'redux/reduxHooks';
 import {
   addToCart,
   TCartItem,
-} from '../../../redux/slices/cartSlice';
-import { AppDispatch } from '../../../redux/store';
-import { showToastSuccess } from '../../CommonComponents/Toasts/toasts';
+} from 'redux/slices/cartSlice';
+import { AppDispatch } from 'redux/store';
+
 import ProductsListItemPriceWrapper from './ProductsListItemPriceWrapper';
 import styles from './styles.module.css';
 

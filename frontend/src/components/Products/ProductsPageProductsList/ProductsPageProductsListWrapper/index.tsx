@@ -1,19 +1,19 @@
 import React from 'react';
 
-import { useParams } from 'react-router-dom';
-
-import { listPartSize } from '../../../../config/mainConstants';
-import { useAppSelector } from '../../../../redux/reduxHooks';
-import { Theme } from '../../../../redux/slices/themeSlice';
-import { RootState } from '../../../../redux/store';
-import DummysListRender from '../../../CommonComponents/DummysListRender';
-import PageMetaData from '../../../CommonComponents/PageMetaData';
-import Paginator from '../../../CommonComponents/Pagination';
+import DummysListRender from 'components/CommonComponents/DummysListRender';
+import PageMetaData from 'components/CommonComponents/PageMetaData';
+import Paginator from 'components/CommonComponents/Pagination';
 import ProductsListItemDummy
-  from '../../ProductsListItem/ProductsListItemDummy/ProductsListItemDummy';
+  from 'components/Products/ProductsListItem/ProductsListItemDummy/ProductsListItemDummy';
 import ProductsListItemDummyDark
-  from '../../ProductsListItem/ProductsListItemDummy/ProductsListItemDummyDark';
-import ProductsListRender from '../../ProductsListRender';
+  from 'components/Products/ProductsListItem/ProductsListItemDummy/ProductsListItemDummyDark';
+import ProductsListRender from 'components/Products/ProductsListRender';
+import { listPartSize } from 'config/mainConstants';
+import { useParams } from 'react-router-dom';
+import { useAppSelector } from 'redux/reduxHooks';
+import { Theme } from 'redux/slices/themeSlice';
+import { RootState } from 'redux/store';
+
 import ProductsListFilterForm from '../ProductsListFilterForm';
 import { TProductsListData } from '../ProductsPageProductsListContainer';
 import ProductsPageProductsListNotFound
@@ -72,7 +72,7 @@ const ProductsPageProductsListWrapper: React.FC<
           targetUrl={targetUrl}
         />
         <section id={styles.offers__listWrapper}>
-          {code === "ERR_BAD_REQUEST" ? (
+          {code === 'ERR_BAD_REQUEST' ? (
             <ProductsPageProductsListNotFound />
           ) : data ? (
             <ProductsListRender data={data} />
@@ -80,7 +80,7 @@ const ProductsPageProductsListWrapper: React.FC<
             <DummysListRender listItem={ProductsListItemDummy} />
           )}
         </section>
-        {code !== "ERR_BAD_REQUEST" && data && (
+        {code !== 'ERR_BAD_REQUEST' && data && (
           <Paginator
             targetUrl={targetUrl}
             items_amount={data.itemsAmount}

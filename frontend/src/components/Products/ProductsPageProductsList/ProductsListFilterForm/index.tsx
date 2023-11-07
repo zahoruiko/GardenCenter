@@ -3,19 +3,19 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { TiDelete } from 'react-icons/ti';
 import { useNavigate } from 'react-router-dom';
-
 import {
   useAppDispatch,
   useAppSelector,
-} from '../../../../redux/reduxHooks';
+} from 'redux/reduxHooks';
 import {
   setMaxPrice,
   setMinPrice,
   setShowOnlyDiscountedProducts,
   setSortMode,
-} from '../../../../redux/slices/productsListFilterSlice';
-import { setSearchTerm } from '../../../../redux/slices/searchProductsSlice';
-import { AppDispatch } from '../../../../redux/store';
+} from 'redux/slices/productsListFilterSlice';
+import { setSearchTerm } from 'redux/slices/searchProductsSlice';
+import { AppDispatch } from 'redux/store';
+
 import styles from './styles.module.css';
 
 type TProductsListFilterFormProps = {

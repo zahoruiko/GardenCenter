@@ -1,22 +1,18 @@
 import {
+  TRenderErrorAdditionalParams,
+  TRenderSuccessAdditionalParams,
+} from 'components/Products/@Types/ProductTypes';
+import ProductsPageTemplate from 'components/Products/ProductsPageTemplate';
+import { listPartSize } from 'config/mainConstants';
+import { useClearSearchFilterParams } from 'hooks/useClearSearchFilterParams';
+import {
+  useGetCategoryPageSourceDataUrl,
+} from 'hooks/useGetCategoryPageSourceDataUrl';
+import useScrollToTop from 'hooks/useScrollToTop';
+import {
   useNavigate,
   useParams,
 } from 'react-router-dom';
-
-import {
-  TRenderErrorAdditionalParams,
-  TRenderSuccessAdditionalParams,
-} from '../../components/Products/@Types/ProductTypes';
-import ProductsPageTemplate
-  from '../../components/Products/ProductsPageTemplate';
-import { listPartSize } from '../../config/mainConstants';
-import {
-  useClearSearchFilterParams,
-} from '../../hooks/useClearSearchFilterParams';
-import {
-  useGetCategoryPageSourceDataUrl,
-} from '../../hooks/useGetCategoryPageSourceDataUrl';
-import useScrollToTop from '../../hooks/useScrollToTop';
 
 const CategoryProductsPage = () => {
   useScrollToTop();

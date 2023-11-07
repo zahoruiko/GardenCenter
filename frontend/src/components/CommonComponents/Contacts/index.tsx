@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next';
 
-import instagramIconDark from '../../../assets/images/instagram-dark.svg';
-import instagramIconLight from '../../../assets/images/instagram-light.svg';
-import whatsAppIconDark from '../../../assets/images/whatsApp-dark.svg';
-import whatsAppIconLight from '../../../assets/images/whatsApp-light.svg';
-import { useAppSelector } from '../../../redux/reduxHooks';
-import { Theme } from '../../../redux/slices/themeSlice';
-import { RootState } from '../../../redux/store';
+import instagramIconDark from 'assets/images/instagram-dark.svg';
+import instagramIconLight from 'assets/images/instagram-light.svg';
+import whatsAppIconDark from 'assets/images/whatsApp-dark.svg';
+import whatsAppIconLight from 'assets/images/whatsApp-light.svg';
+import { useAppSelector } from 'redux/reduxHooks';
+import { Theme } from 'redux/slices/themeSlice';
+import { RootState } from 'redux/store';
 import styles from './styles.module.css';
 
 const getThemeIcon = (

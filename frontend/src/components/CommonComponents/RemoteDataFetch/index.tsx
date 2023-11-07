@@ -1,32 +1,22 @@
-import {
-  Dispatch,
-  FC,
-} from 'react';
+import { Dispatch, FC } from 'react';
 
 import { UseTranslationResponse } from 'react-i18next';
-import {
-  NavigateFunction,
-  Params,
-} from 'react-router-dom';
+import { NavigateFunction, Params } from 'react-router-dom';
 import { AnyAction } from 'redux';
 
-import { useRemoteDataFetch } from '../../../hooks/useRemoteDataFetch';
-import { TCartItem } from '../../../redux/slices/cartSlice';
-import {
-  TCategoriesListRenderProps,
-} from '../../Categories/CategoriesListRender';
+import { useRemoteDataFetch } from 'hooks/useRemoteDataFetch';
+import { TCartItem } from 'redux/slices/cartSlice';
+import { TCategoriesListRenderProps } from 'components/Categories/CategoriesListRender';
 import {
   TRenderErrorAdditionalParams,
   TRenderSuccessAdditionalParams,
-} from '../../Products/@Types/ProductTypes';
-import {
-  TProductItemWrapperProps,
-} from '../../Products/ProductItem/ProductItemWrapper';
-import { TProductsListRenderProps } from '../../Products/ProductsListRender';
+} from 'components/Products/@Types/ProductTypes';
+import { TProductsListRenderProps } from 'components/Products/ProductsListRender';
 import {
   TProductsPageProductsListContainerProps,
   TProductsPageProductsListWrapperHooks,
-} from '../../Products/ProductsPageProductsList/ProductsPageProductsListContainer';
+} from 'components/Products/ProductsPageProductsList/ProductsPageProductsListContainer';
+import { TProductItemWrapperProps } from 'components/Products/ProductItem/ProductItemWrapper';
 
 type TRemoteDataFetchProps = {
   uri: string;

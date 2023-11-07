@@ -1,18 +1,14 @@
 import React from 'react';
 
-import {
-  useNavigate,
-  useParams,
-} from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
-import RemoteDataFetch from '../../../CommonComponents/RemoteDataFetch';
+import ProductsPageProductsListWrapper from '../ProductsPageProductsListContainer';
+import RemoteDataFetch from 'components/CommonComponents/RemoteDataFetch';
 import {
   TRenderErrorAdditionalParams,
   TRenderLoaderAdditionalParams,
   TRenderSuccessAdditionalParams,
-} from '../../@Types/ProductTypes';
-import ProductsPageProductsListWrapper
-  from '../ProductsPageProductsListContainer';
+} from 'components/Products/@Types/ProductTypes';
 
 type TProductsPageProductsListContainerProps = {
   dataSourceUrl: string;

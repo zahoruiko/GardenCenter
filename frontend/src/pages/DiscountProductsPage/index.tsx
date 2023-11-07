@@ -1,21 +1,17 @@
-import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
-
 import {
   TRenderErrorAdditionalParams,
   TRenderLoaderAdditionalParams,
   TRenderSuccessAdditionalParams,
-} from '../../components/Products/@Types/ProductTypes';
-import ProductsPageTemplate
-  from '../../components/Products/ProductsPageTemplate';
-import { listPartSize } from '../../config/mainConstants';
+} from 'components/Products/@Types/ProductTypes';
+import ProductsPageTemplate from 'components/Products/ProductsPageTemplate';
+import { listPartSize } from 'config/mainConstants';
 import {
   useAllDiscountedProductsSourceDataUrl,
-} from '../../hooks/useAllDiscountedProductsSourceDataUrl';
-import {
-  useClearSearchFilterParams,
-} from '../../hooks/useClearSearchFilterParams';
-import useScrollToTop from '../../hooks/useScrollToTop';
+} from 'hooks/useAllDiscountedProductsSourceDataUrl';
+import { useClearSearchFilterParams } from 'hooks/useClearSearchFilterParams';
+import useScrollToTop from 'hooks/useScrollToTop';
+import { useTranslation } from 'react-i18next';
+import { useParams } from 'react-router-dom';
 
 const DiscountProductsPage = () => {
   useScrollToTop();

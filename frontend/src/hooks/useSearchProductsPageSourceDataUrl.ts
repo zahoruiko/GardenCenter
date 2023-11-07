@@ -3,7 +3,8 @@ import {
   useState,
 } from 'react';
 
-import { useAppSelector } from '../redux/reduxHooks';
+import { useAppSelector } from 'redux/reduxHooks';
+
 import {
   getMaxPrice,
   getMinPrice,

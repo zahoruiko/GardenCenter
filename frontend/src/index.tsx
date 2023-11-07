@@ -1,14 +1,18 @@
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import { PersistGate } from "redux-persist/integration/react";
-import { Provider } from "react-redux";
+import 'config/i18n';
 
-import App from "./App";
-import DataLoadingSpinner from "./components/CommonComponents/DataLoadingSpinner";
-import { persistor, store } from "./redux/store";
-import "./config/i18n";
+import DataLoadingSpinner from 'components/CommonComponents/DataLoadingSpinner';
+import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+import { PersistGate } from 'redux-persist/integration/react';
+import {
+  persistor,
+  store,
+} from 'redux/store';
 
-const rootElement = document.getElementById("root");
+import App from './App';
+
+const rootElement = document.getElementById('root');
 
 if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);

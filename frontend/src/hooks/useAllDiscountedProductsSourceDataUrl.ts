@@ -3,36 +3,55 @@ import {
   useState,
 } from 'react';
 
-import { useAppSelector } from '../redux/reduxHooks';
+import { useAppSelector } from 'redux/reduxHooks';
+
 import {
   getMaxPrice,
   getMinPrice,
 } from './utils/getMinMaxPrice';
 import { getQuerySortParams } from './utils/getQuerySortParams';
 
-export const useAllDiscountedProductsSourceDataUrl = (listCurrentPart: number, limit: number) => {
+export const useAllDiscountedProductsSourceDataUrl = (
+  listCurrentPart: number,
+  limit: number
+) => {
   let offset = listCurrentPart * limit;
 
-  const currentMinPriceState = useAppSelector(state => state.sort.minPrice);
-  const currentMaxPriceState = useAppSelector(state => state.sort.maxPrice);
-  const currentShowOnlyDiscountedProductsState = useAppSelector(state => state.sort.showOnlyDiscountedProducts);
-  const currentSortModeState = useAppSelector(state => state.sort.sortMode);
-  const currentSearchTermState = useAppSelector(state => state.search.searchTerm);
+  const currentMinPriceState = useAppSelector((state) => state.sort.minPrice);
+  const currentMaxPriceState = useAppSelector((state) => state.sort.maxPrice);
+  const currentShowOnlyDiscountedProductsState = useAppSelector(
+    (state) => state.sort.showOnlyDiscountedProducts
+  );
+  const currentSortModeState = useAppSelector((state) => state.sort.sortMode);
+  const currentSearchTermState = useAppSelector(
+    (state) => state.search.searchTerm
+  );
 
-  const [dataUrl, setDataUrl] = useState("");
+  const [dataUrl, setDataUrl] = useState('');
 
   useEffect(() => {
     let minPrice = getMinPrice(+currentMinPriceState);
     let maxPrice = getMaxPrice(+currentMaxPriceState);
     const querySortParams = getQuerySortParams(currentSortModeState);
 
-    if (currentSearchTermState === "") {
-      setDataUrl(`/products/all/discounted/minPrice/${minPrice}/maxPrice/${maxPrice}/sortBy/${querySortParams.sortFieldName}/sortDirection/${querySortParams.sortDirection}?offset=${offset}&limit=${limit}`);
+    if (currentSearchTermState === '') {
+      setDataUrl(
+        `/products/all/discounted/minPrice/${minPrice}/maxPrice/${maxPrice}/sortBy/${querySortParams.sortFieldName}/sortDirection/${querySortParams.sortDirection}?offset=${offset}&limit=${limit}`
+      );
     } else {
-      setDataUrl(`/products/find/${currentSearchTermState}/discounted/minPrice/${minPrice}/maxPrice/${maxPrice}/sortBy/${querySortParams.sortFieldName}/sortDirection/${querySortParams.sortDirection}?offset=${offset}&limit=${limit}`);
+      setDataUrl(
+        `/products/find/${currentSearchTermState}/discounted/minPrice/${minPrice}/maxPrice/${maxPrice}/sortBy/${querySortParams.sortFieldName}/sortDirection/${querySortParams.sortDirection}?offset=${offset}&limit=${limit}`
+      );
     }
-
-  }, [currentMaxPriceState, currentMinPriceState, currentSearchTermState, currentShowOnlyDiscountedProductsState, currentSortModeState, limit, offset]);
+  }, [
+    currentMaxPriceState,
+    currentMinPriceState,
+    currentSearchTermState,
+    currentShowOnlyDiscountedProductsState,
+    currentSortModeState,
+    limit,
+    offset,
+  ]);
 
   return dataUrl;
 };

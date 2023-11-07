@@ -2,6 +2,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import React from 'react';
 
+import PageMetaData from 'components/CommonComponents/PageMetaData';
+import { showToastSuccess } from 'components/CommonComponents/Toasts/toasts';
+import { backendUrl } from 'config/mainConstants';
 import { UseTranslationResponse } from 'react-i18next';
 import { LiaShoppingBagSolid } from 'react-icons/lia';
 import {
@@ -13,17 +16,12 @@ import {
   AnyAction,
   Dispatch,
 } from 'redux';
-
-import { backendUrl } from '../../../../config/mainConstants';
 import {
   addToCart,
   TCartItem,
-} from '../../../../redux/slices/cartSlice';
-import {
-  sanitizeCharsNumbersSpezChars,
-} from '../../../../utils/filterSpecialChars';
-import PageMetaData from '../../../CommonComponents/PageMetaData';
-import { showToastSuccess } from '../../../CommonComponents/Toasts/toasts';
+} from 'redux/slices/cartSlice';
+import { sanitizeCharsNumbersSpezChars } from 'utils/filterSpecialChars';
+
 import ProductItemPriceWrapper from '../ProductItemPriceWrapper';
 import styles from './styles.module.css';
 

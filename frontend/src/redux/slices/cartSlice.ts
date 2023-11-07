@@ -1,7 +1,7 @@
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
 
-import { TProductItem } from '../../components/Products/@Types/ProductTypes';
+import { TProductItem } from 'components/Products/@Types/ProductTypes';
 import type { RootState } from '../store';
 
 export type TCartItem = TProductItem & { quantity: number };
