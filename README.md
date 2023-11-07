@@ -1,7 +1,9 @@
 # Garden Center
 
 React JS + Node JS: Implementation of an educational project at the International tech school [Tel-Ran.de](https://tel-ran.de)  
+
 The design of the site pages corresponds to the design assignment, which can be found [here](https://www.figma.com/file/yNWvXvjZC0t8d9yBOpeEPy/Garden?type=design&node-id=4743-1095&t=JkSgOidnPJLWZMmH-0).
+
 Additionally, the following features are implemented:  
 - switching the language of the interface texts to English and German  
 - switching between "light" and "dark" interface themes
